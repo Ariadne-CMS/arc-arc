@@ -20,5 +20,8 @@
 		"arc/config": "~1.0",
 		"arc/grants": "~1.0",
 		"arc/events": "~1.0"
+	},
+	"require-dev": {
+		"lastcraft/simpletest": "1.*"
 	}
 }

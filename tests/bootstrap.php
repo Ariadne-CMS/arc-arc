@@ -1,14 +1,18 @@
 <?php
 
-	if ( ! defined ('SIMPLETESTDIR' ) ) {
+	if ( ! defined('SIMPLETESTDIR')) {
 		define('SIMPLETESTDIR', __DIR__);
 	}
 
 	error_reporting(E_ALL|E_STRICT);
-	include_once( SIMPLETESTDIR . '/../vendor/autoload.php');
 
-	require_once( SIMPLETESTDIR . '/vendor/lastcraft/simpletest/autorun.php');
-	require_once( SIMPLETESTDIR . '/vendor/lastcraft/simpletest/compatibility.php');
-	require_once( SIMPLETESTDIR . '/vendor/lastcraft/simpletest/browser.php');
-	require_once( SIMPLETESTDIR . '/vendor/lastcraft/simpletest/web_tester.php');
-	require_once( SIMPLETESTDIR . '/vendor/lastcraft/simpletest/unit_tester.php');
+    $vendorDirectory = __DIR__ . '/../vendor';
+    $simpleTestSourceDirectory = $vendorDirectory . '/lastcraft/simpletest';
+	
+	include_once($vendorDirectory . '/autoload.php');
+
+	require_once($simpleTestSourceDirectory . '/autorun.php');
+	require_once($simpleTestSourceDirectory . '/compatibility.php');
+	require_once($simpleTestSourceDirectory . '/browser.php');
+	require_once($simpleTestSourceDirectory . '/web_tester.php');
+	require_once($simpleTestSourceDirectory . '/unit_tester.php');
