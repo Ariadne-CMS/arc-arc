@@ -1,27 +1,27 @@
 ARC: Ariadne Component Library 
 ========================= 
 
+[![Build Status](https://travis-ci.org/Ariadne-CMS/arc-arc.svg?branch=master)][arc-travis]
+[![Latest Stable Version](https://poser.pugx.org/arc/arc/v/stable.svg)][arc-packagist]
+[![Total Downloads](https://poser.pugx.org/arc/arc/downloads.svg)][arc-packagist]
+[![Latest Unstable Version](https://poser.pugx.org/arc/arc/v/unstable.svg)][arc-packagist]
+[![License](https://poser.pugx.org/arc/arc/license.svg)][arc-packagist]
+
+
 A flexible component library for PHP 5.4+ 
 ----------------------------------------- 
 
 ARC is a set of components, build to be as simple as possible. Each component does just one thing and has a small and 
 simple API to learn. ARC uses static factory methods to simplify the API while using Dependency Injection. ARC is not a
-framework but can be used in combination with any or no framework.
+framework. It can be used in combination with any framework or indeed without.
 
 The Ariadne Component Library is a spinoff from the Ariadne Web Application Platform and Content Management System 
 [http://www.ariadne-cms.org/](http://www.ariadne-cms.org/). Many of the concepts used in ARC have their origin in Ariadne
 and have been in use since 2000. 
 
-The single common unique feature in all components is that they are designed to work in and with a tree structure. URL's
+A unique feature in most components is that they are designed to work in and with a tree structure. URL's
 are based on the concept of paths in a filesystem. This same path concept and the underlying filesystem-like tree is
-used in all ARC components. 
-
-`arc/grants` stores access rights per path in a tree and allows or disallows access to entire subtrees. This matches 
-directly with your website URL's. You can grant edit access to a 'mike' for the URL http://www.example.com/users/mike/.
-Or disable read access for not-logged in users for http://www.example.com/members-only/.
-
-`arc/events` uses the path in your URL to fire and listen for events. An event fired on /example/foo/baz/ can be listened
-to on /example/. Events trickle 'up' and 'down' the path just like events in a webbrowser move up and down the DOM tree.
+used in most ARC components. 
 
 Installation
 ------------
@@ -29,10 +29,18 @@ Installation
 Via [Composer](https://getcomposer.org/doc/00-intro.md):
 
     $ composer require arc/arc
+
+or start a new project with arc
+
+    $ composer create-project arc/arc {$path}
     
-This will download and install all arc components. But you don't need to do this, you can just download the components
+This will download and install all arc components. 
+
+But you don't need to do this, you can just download the components
 you really need instead. Below is a list of components and what they do:
 
+Components
+----------
 - [`arc/base`](https://github.com/Ariadne-CMS/arc-base/): Common datatypes and functionality shared by all ARC components.
 Is installed automatically if needed.
 - [`arc/cache`](https://github.com/Ariadne-CMS/arc-cache/): Cache functionality and a caching proxy class.
