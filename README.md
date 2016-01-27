@@ -40,9 +40,10 @@ Is installed automatically if needed.
 modelled after the browsers DOM events.
 - [`arc/config`](https://github.com/Ariadne-CMS/arc-config/): Configuration management, storing and retrieving 
 configuration settings in a tree structure.
-- [`arc/web`](https://github.com/Ariadne-CMS/arc-web/): URL component to ease manipulation of URL's (even non-PHP URL's) 
-and a HTTP client. Includes an XSS preventer as a bonus.
+- [`arc/web`](https://github.com/Ariadne-CMS/arc-web/): Simple and correct manipulation of URL's, HTTP Headers 
+and a HTTP client. Also includes a simple intrustion detection component to prevent cross site scripting attacks.
 - [`arc/xml`](https://github.com/Ariadne-CMS/arc-xml/): Parsing and writing XML made simple.
+- [`arc/html`](https://github.com/Ariadne-CMS/arc-html/): Parsing and writing HTML also made simple.
 - [`arc/grants`](https://github.com/Ariadne-CMS/arc-grants/): Access control management in a tree structure, like a 
 filesystem.
-
+- [`arc/prototype`](https://github.com/Ariadne-CMS/arc-prototype/): Experimental prototypical inheritance, like javascript.
